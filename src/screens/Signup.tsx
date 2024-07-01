@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function Home() {
+export default function Signup() {
   return (
     <View>
-      <Text>Home</Text>
+      <Text>Signup</Text>
     </View>
   )
 }
