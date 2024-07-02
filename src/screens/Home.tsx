@@ -48,7 +48,31 @@ const [userData, setUserData] = useState<userObj>()
 }
 
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#0B0D32',
+  },
+  welcomeContainer: {
+    padding: 12,
+
+    flex: 1,
+    alignItems: 'center',
+  },
+  message: {
+    fontSize: 26,
+    fontWeight: '500',
+    color: '#FFFFFF',
+  },
+  userContainer: {
+    marginTop: 24,
+  },
+  userDetails: {
+    fontSize: 20,
+    color: '#FFFFFF',
+  },
+});
+
 
 
 export default Home
