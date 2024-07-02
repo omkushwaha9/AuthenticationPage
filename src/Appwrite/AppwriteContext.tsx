@@ -1,3 +1,4 @@
+// AppwriteContextFile
 import { View, Text } from 'react-native'
 import React, { FC, createContext } from 'react'
 
