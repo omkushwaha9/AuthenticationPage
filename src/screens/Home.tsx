@@ -4,6 +4,8 @@ import React from 'react'
 import { FAB } from '@rneui/themed'
 //Snackbar
 import Snackbar from 'react-native-snackbar'
+//Context API
+import{AppwriteContext} from '../Appwrite/AppwriteContext'
 
 
 const Home = () => {
