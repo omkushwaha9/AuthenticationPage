@@ -2,7 +2,8 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 //React native elements
 import { FAB } from '@rneui/themed'
-
+//Snackbar
+import Snackbar from 'react-native-snackbar'
 
 
 const Home = () => {
