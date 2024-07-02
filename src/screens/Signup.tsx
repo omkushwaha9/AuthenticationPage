@@ -1,7 +1,51 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, {useContext, useState}  from 'react'
+//React native elements
+import { FAB, Image } from '@rneui/themed'
+//Snackbar
+import Snackbar from 'react-native-snackbar'
+//Context API
+import{AppwriteContext} from '../Appwrite/AppwriteContext'
+// Navigation
+import {NativeStackScreenProps} from '@react-navigation/native-stack'
+import {AuthStackParamList} from '../routes/AuthStack'
+
+type SignupScrenProps = NativeStackScreenProps<AuthStackParamList,
+'Signup'>
+const {appwrite, setIsLoggedIn} = useContext(AppwriteContext)
+
+
 
 const Signup = () => {
+  const {appwrite, setIsLoggedIn} = useContext(AppwriteContext)
+
+  const[error, setError] = useState<string>('')
+  const[name, setName] = useState<string>('')
+  const[email, setEmail] = useState<string>('')
+  const[password, setPassword] = useState<string>('')
+  const[repeatpassword, setRepeatPassword] = useState<string>('')
+
+  const handleSignup = () => {
+    if(
+      name.length < 1 ||
+      email.length < 1 ||
+      password.length < 1 ||
+      repeatpassword.length < 1
+    )   {
+        setError('All fields are required');
+    }   else if (password !== repeatpassword){
+        setError('Password do not match');
+    }   else {
+        const user ={
+          email,
+          password,
+          name,
+        };
+      
+
+    }
+    
+  }
   return (
     <View>
       <Text>Signup</Text>
