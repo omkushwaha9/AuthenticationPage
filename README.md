@@ -1,4 +1,6 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# OM KUSHWAHA PROJECT
+
+AuthenticationPage is something which you can add to your Application before letting the user to acces it. They can be usefull to see identicfcation the person  who's  is viewing the application After the Authentification procedure.
 
 # Getting Started
 
