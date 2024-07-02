@@ -41,7 +41,21 @@ const Signup = () => {
           password,
           name,
         };
-      
+      appwrite
+      .createAccount(user)
+      .then((response:any) => {
+        if (response){
+          setIsLoggedIn(true)
+          Snackbar.show({
+            text: 'Signup Sucess',
+            duration: Snackbar.LENGTH_SHORT
+          })
+        }
+      })
+      .catch(e => {
+        console.log(e);
+        setError(e.message)
+      })
 
     }
     
